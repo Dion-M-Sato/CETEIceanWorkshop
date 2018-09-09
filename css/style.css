@@ -1,0 +1,28 @@
+tei-supplied{
+  color:red;
+}
+
+/*tei-supplied:before{
+    content:"["
+  }
+
+tei-supplied:after{
+  content:"]"
+}
+*/
+tei-seg[rend="dropInt"]{
+  font-size:300%;
+  float:left;
+  line-height:1em;
+  padding-right:10px;
+}
+
+tei-subst > tei-del {
+  display: none; 
+  text-decoration: line-through;
+}
+
+tei-subst > tei-add {
+  color: blue; 
+  cursor: pointer;
+}

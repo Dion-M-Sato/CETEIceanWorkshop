@@ -4,15 +4,36 @@
     <title>My project</title>
     <meta charset="utf-8">
       <link rel="stylesheet" href="css/CETEIcean.css" />
+      <link rel="stylesheet" href="css/style.css" />
       <script src="js/CETEI.js">
+//      <script src="js/myBehaviors.js">
       </script>
     </head>
     <body>
       <div id="TEI">
-        </div> <script>
+        </div> 
+        <script>
         var CETEIcean = new CETEI()
+
         CETEIcean.getHTML5("data/test.xml", function(data) {
         document.getElementById("TEI").appendChild(data) })
+var mybehav = CETEIcean.addBehaviors({
+ handlers:{
+ "persName":function(el) {var a = document.createElement("a") 
+   a.setAttribute("href", el.getAttribute("ref")) 
+   a.innerHTML = el.innerHTML;
+   return a
+   }
+ }})
+        var substitutions = document.querySelectorAll("tei-subst")
+        substitutions.forEach( function(subst){
+        subst.querySelector("tei-add").addEventListener("click", function(){
+        var del = subst.querySelector("tei-del")
+        if (window.getComputedStyle(del).getPropertyValue("display") == "none") {
+        del.style.display = "inline" } 
+          else{
+        del.style.display = "none" }
+        }) })
       </script>
     </body>
   </html>

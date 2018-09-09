@@ -2,7 +2,7 @@
 <!DOCTYPE TEI PUBLIC "//Brown University Women Writers Project//DTD WWP Textbase Storage DTD//EN" "/opt/local/share/xml/wwpstore/schema/dtd/wwp-store.dtd">
 <?oxygen RNGSchema="../schema/wwp-store.rnc" type="compact"?>
 <!-- $Header: /home/jmelson/tb/improvement/RCS/bath.poems.xml,v 1.49 2010-07-16 09:06:16-04 jmelson Exp $ -->
-<TEI xmlns="http://www.wwp.brown.edu/ns/textbase/storage/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader xml:id="TR00086.hdr">
     <fileDesc>
       <titleStmt>
@@ -164,13 +164,13 @@
       <head rend="case(allcaps)post(#rule)">Poems.</head>
       <div xml:id="p01" type="poem" rend="pre(#rule)">
         <argument rend="post(#rule)">
-          <p rend="slant(italic)first-indent(0)indent(1)">Musing on the changes that are observable in many of the
-<lb/>scenes we contemplate, the circumstance of the spot on
+          <p rend="slant(italic)first-indent(0)indent(1)"><seg rend="dropInt">M</seg>using on the changes that are observable in many of the
+            <lb/>scenes <subst><add>we contemplate, the circumstance of the spot on
 <lb/>which now stands the Friends' Meeting House, in
 	    <placeName>Bristol</placeName>,
 <lb/>called the <placeName>Friars</placeName>, having formerly been the scite
 	    of a
-<lb/>Monastery, appeared a striking illustration of the revo­
+<lb/>Monastery, appeared a striking illustration of the revo­</add></subst>
 <lb/>lutions of time; and under the impression of the superior
 <lb/>purity of such a mode of Worship to one so encumbered
 <lb/>with superstitious forms and ceremonies, the following
@@ -179,7 +179,7 @@
         <lg type="poem" subtype="indeterminate">
           <lg type="para">
             <l><hi rend="class(#DIC)">W</hi><hi rend="case(allcaps)">hat</hi> revolutions, in succeeding years,</l>
-            <l>Change all terrestrial things!—we stand amaz'd</l>
+            <l><supplied>Change all terrestrial things!—we stand amaz'd</supplied></l>
             <l>When, leaping o'er the gulph of time, long pass'd,</l>
             <l>On some far distant eminence, we pause;</l>
             <l>Pause, to reflect, to wonder, to admire,</l>
